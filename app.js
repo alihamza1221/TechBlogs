@@ -59,6 +59,6 @@ app.get("/posts/:topic",(req,res)=>{
    })
 })
 
-app.listen('3000',function(){
+app.listen('techblogs.pages.dev',function(){
   console.log("server is running on port 3000...")
 })
