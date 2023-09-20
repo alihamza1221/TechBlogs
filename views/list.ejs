@@ -1,0 +1,17 @@
+<%- include("partials/header.ejs") %>
+
+ <body>
+   <!-- navbar -->
+   <%- include("partials/navbar.ejs") %>
+   <main class="mt">
+      
+      <!-- content -->
+    <% posts.forEach((post)=>{  %>
+      <h1 class="heading" style=" text-align: center;"><%= post.title %></h1>
+      <p class="f1rem contentstyle" style="text-align: center;"><%= post.compose.substring(0,100) + "... " %> <a class="readme" href="/posts/<%= post.title %>"> Readme</a></p>
+      <br>
+   <% })%>
+     
+    
+   </main>
+   <%- include("partials/footer.ejs") %>

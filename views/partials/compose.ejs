@@ -1,0 +1,12 @@
+<%- include("header.ejs") %>
+<%- include("navbar.ejs") %>
+<div class="compose mt">
+<form class="form" action="/" method="post">
+    <h1 class="heading">Title</h1>
+    <input type="text" placeholder="Title" class="f1rem" name="title">
+    <h2 class="heading">Compose</h2>
+    <textarea type="text" name="compose" class="f1rem" cols="30" rows="10" placeholder="content"> </textarea>
+    <button class="btn" type="submit" >Publish</button>
+</form>
+</div>
+    <%- include("footer.ejs") %>
