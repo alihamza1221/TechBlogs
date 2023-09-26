@@ -6,7 +6,7 @@ const _ = require('lodash');
 app.use(bodyparser.urlencoded({ extended:true }));
 app.use(express.static("public"));
 app.set('view engine','ejs');
-
+const port = 3000;
 const posts =[];
 //  content about blogs
 const t1 = "Tech related Blogs";
@@ -59,6 +59,6 @@ app.get("/posts/:topic",(req,res)=>{
    })
 })
 
-app.listen('techblogs.pages.dev',function(){
+app.listen(port,function(){
   console.log("server is running on port 3000...")
 })
